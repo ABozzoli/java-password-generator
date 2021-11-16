@@ -4,7 +4,7 @@ public class PasswordGenerator {
 
 	public static void main(String[] args) {
 
-		// settaggio variabili
+		// input
 		String firstName;
 		String lastName;
 		String favColour;
@@ -13,10 +13,13 @@ public class PasswordGenerator {
 		int birthMonth;
 		int birthYear;
 		
+		// intermediate
 		int birthTotal;
+		
+		// output
 		String generatedPass;
 		
-		// inizializzazione variabili
+		// init variables
 		firstName = "Alessandro";
 		lastName = "Bozzoli";
 		favColour = "blu";
