@@ -7,25 +7,29 @@ public class PasswordGenerator {
 		// settaggio variabili
 		String firstName;
 		String lastName;
-		String prefColour;
+		String favColour;
 		
 		int birthDay;
 		int birthMonth;
 		int birthYear;
 		
+		int birthTotal;
+		String generatedPass;
+		
 		// inizializzazione variabili
 		firstName = "Alessandro";
 		lastName = "Bozzoli";
-		prefColour = "blu";
+		favColour = "blu";
 		
 		birthDay = 10;
 		birthMonth = 1;
 		birthYear = 1992;
 		
-		// programma
-		int birthTotal = birthDay + birthMonth + birthYear;
+		birthTotal = birthDay + birthMonth + birthYear;
+		generatedPass = firstName + "-" + lastName + "-" + favColour + "-" + birthTotal;
 		
-		System.out.println(firstName + "-" + lastName + "-" + prefColour + "-" + birthTotal);
+		// print
+		System.out.println("The generated password is: " + generatedPass);
 
 	}
 
